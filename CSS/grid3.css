@@ -1,0 +1,43 @@
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4, auto);
+    /* Cada comillas representa una fila, en cada una va un identificador de cada columna dentro de esa fila. 
+    Este identificador debe ser texto y n necesariamente igual a la clase que se asigno en el html
+    Lo importante es que este mismo identificador este referenciado en el grid-area cuando se defina el estilo de cada clase*/
+    grid-template-areas: "header header header"
+                         "sidebar1 contenido sidebar2"
+                         "sidebar1 widget sidebar2"
+                         "footer footer footer";
+}
+
+.grid .header{
+    background-color: rgba(137, 43, 226, 0.726);
+    grid-area: header;
+}
+
+.grid .sidebar1{
+    background-color: rgba(0, 0, 255, 0.61);
+    grid-area: sidebar1;
+}
+
+.grid .contenido{
+    background-color: rgba(43, 226, 226, 0.651);
+    grid-area: contenido;
+}
+
+.grid .widget{
+    background-color: rgba(217, 255, 0, 0.664);
+    grid-area: widget;
+}
+
+.grid .sidebar2{
+    background-color: rgba(255, 0, 128, 0.322);
+    grid-area: sidebar2;
+}
+
+.grid .footer{
+    background-color: rgba(43, 226, 141, 0.712);
+    grid-area: footer;
+}

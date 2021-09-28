@@ -1,0 +1,7 @@
+.grid{
+    display: grid;
+    /* Con fr se indica cuantas fracciones de la caja ocupara cada columna*/
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* grid-template-columns: 2 fr repeat(3, 1fr); */
+}
